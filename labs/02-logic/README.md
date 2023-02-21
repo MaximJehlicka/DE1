@@ -7,15 +7,15 @@
 
    Greater than:
 
-   ![K-maps](images/kmap_empty.png)
+ ![scanner_20230221_223828](https://user-images.githubusercontent.com/125310309/220465155-2353f08e-a898-4a82-b301-97c8987a6338.jpg)
 
    Less than:
 
-   ![K-maps](images/kmap_empty.png)
+![scanner_20230221_223901](https://user-images.githubusercontent.com/125310309/220465261-becf03a5-519d-4fa2-ba0b-9e7f2fa84b36.jpg)
+
 
 2. Mark the largest possible implicants in the K-map and according to them, write the equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
-   ![Logic functions](images/comparator_min.png)
 
 ### 4-bit comparator
 
@@ -48,27 +48,8 @@
 
 2. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+  https://www.edaplayground.com/x/w8iF
    
    1. Complete the truth table for 2-bit *Identity comparator* (B equals A), and two *Magnitude comparators* (B is greater than A, B is less than A). Note that, such a digital device has four inputs and three outputs/functions.
 
-   | **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B is greater than A** | **B equals A** | **B is less than A** |
-   | :-: | :-: | :-: | :-: | :-: | :-: |
-   |  0 | 0 0 | 0 0 | 0 | 1 | 0 |
-   |  1 | 0 0 | 0 1 | 0 | 0 | 1 |
-   |  2 | 0 0 | 1 0 | 0 | 0 | 1 |
-   |  3 | 0 0 | 1 1 | 0 | 0 | 1 |
-   |  4 | 0 1 | 0 0 | 1 | 0 | 0 |
-   |  5 | 0 1 | 0 1 | 0 | 1 | 0 |
-   |  6 | 0 1 | 1 0 | 0 | 0 | 1 |
-   |  7 | 0 1 | 1 1 | 0 | 0 | 1 |
-   |  8 | 1 0 | 0 0 | 1 | 0 | 0 |
-   |  9 | 1 0 | 0 1 | 1 | 0 | 0 |
-   | 10 | 1 0 | 1 0 | 0 | 1 | 0 |
-   | 11 | 1 0 | 1 1 | 0 | 0 | 1 |
-   | 12 | 1 1 | 0 0 | 1 | 0 | 0 |
-   | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
-   | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
-   | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
-
-<a name="part1"></a>
+ 
