@@ -1,5 +1,5 @@
 
-# Lab 2: INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAMEE
+# Lab 2: Maxim Jehlička
 
 ### 2-bit comparator
 
