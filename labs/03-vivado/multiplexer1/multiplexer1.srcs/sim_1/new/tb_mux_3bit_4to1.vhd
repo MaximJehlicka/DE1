@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 02/23/2023 12:05:25 PM
+-- Create Date: 02/22/2023 16:03:14 PM
 -- Design Name: 
 -- Module Name: tb_mux_3bit_4to1 - Behavioral
 -- Project Name: 
