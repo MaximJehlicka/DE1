@@ -59,7 +59,7 @@ begin
     sig_blank <= '1';    -- Blank display
     wait for 150 ns;
     sig_blank <= '0';    -- Normal operation
-    wait for 15 ns;
+    wait for 100 ns;
 
     -- Loop for all hex values
     for ii in 0 to 15 loop
@@ -67,6 +67,139 @@ begin
       -- Convert ii decimal value to 4-bit wide binary
       -- s_hex <= std_logic_vector(to_unsigned(ii, s_hex'length));
       sig_hex <= std_logic_vector(to_unsigned(ii, 4));
+      
+      case sig_hex is
+
+        when "0000" =>
+
+            assert (
+                (sig_seg = "0000001")
+            )
+        report "Input hex=0000 FAILED"
+        severity error;
+
+        when "0001" =>
+
+          assert (
+                (sig_seg = "1001111")
+            )
+        report "Input hex=0001 FAILED"
+        severity error;
+          
+        when "0010" =>
+
+          assert (
+                (sig_seg = "0010010")
+            )
+        report "Input hex=0010 FAILED"
+        severity error;
+          
+        when "0011" =>
+
+          assert (
+                (sig_seg = "0000110")
+            )
+        report "Input hex=0011 FAILED"
+        severity error;
+          
+        when "0100" =>
+
+          assert (
+                (sig_seg = "1001100")
+            )
+        report "Input hex=0100 FAILED"
+        severity error;
+          
+        when "0101" =>
+
+          assert (
+                (sig_seg = "0100100")
+            )
+        report "Input hex=0101 FAILED"
+        severity error;
+          
+        when "0110" =>
+
+          assert (
+                (sig_seg = "0100000")
+            )
+        report "Input hex=0110 FAILED"
+        severity error;
+          
+        when "0111" =>
+
+          assert (
+                (sig_seg = "0001111")
+            )
+        report "Input hex=0111 FAILED"
+        severity error;
+
+        when "1000" =>
+
+          assert (
+                (sig_seg = "0000000")
+            )
+        report "Input hex=1000 FAILED"
+        severity error;
+
+        when "1001" =>
+
+          assert (
+                (sig_seg = "0000100")
+            )
+        report "Input hex=1001 FAILED"
+        severity error;
+          
+        when "1010" =>
+
+          assert (
+                (sig_seg = "0001000")
+            )
+        report "Input hex=1010 FAILED"
+        severity error;
+          
+        when "1011" =>
+
+          assert (
+                (sig_seg = "1100000")
+            )
+        report "Input hex=1011 FAILED"
+        severity error;
+          
+        when "1100" =>
+
+          assert (
+                (sig_seg = "0110001")
+            )
+        report "Input hex=1100 FAILED"
+        severity error;
+          
+        when "1101" =>
+
+          assert (
+                (sig_seg = "1000010")
+            )
+        report "Input hex=1101 FAILED"
+        severity error;
+          
+        when "1110" =>
+
+          assert (
+                (sig_seg = "0110000")
+            )
+        report "Input hex=1110 FAILED"
+        severity error;
+
+        when others =>
+
+          assert (
+                (sig_seg = "0111000")
+            )
+        report "Input hex=1111 FAILED"
+        severity error;
+
+      end case;
+      
       wait for 50 ns;
 
     end loop;
