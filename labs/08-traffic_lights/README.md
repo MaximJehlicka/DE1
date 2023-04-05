@@ -1,6 +1,4 @@
-
-# Lab 8: INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAME
-
+# Lab 8: Maxim Jehlička
 ### Traffic light controller
 
 1. Listing of VHDL code of the completed process `p_traffic_fsm`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
